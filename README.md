@@ -1,6 +1,8 @@
 # GPT JSON Sanitizer
 
-A package to fix JSON responses from ChatGPT.
+A package to fix JSON responses from ChatGPT. 
+Sometimes getting valid json responses from OpenAI becomes very hard, and we get broken responses eg: missing brackets. Adding extra words like ```json etc.
+Here, I am trying to handle such cases by post-processing.  All the cases which we are handling now can be found in `tests`, but I know there can be more. So let me know in issues, and we can extend it further.
 
 ## Installation
 
