@@ -11,6 +11,11 @@ def fix_json_response(response: str) -> dict:
     Returns:
         dict: The JSON-compatible dictionary.
     """
+    # Attempt to parse the JSON without any modifications
+    try:
+        return json.loads(response)
+    except json.JSONDecodeError:
+        pass  # If it fails, continue with the processing steps
     # Remove markdown JSON code fences and the `json` keyword
     response = re.sub(r'```json\n|```|json', '', response)
     
