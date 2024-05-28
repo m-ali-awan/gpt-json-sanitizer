@@ -8,6 +8,14 @@ Here, I am trying to handle such cases by post-processing.  All the cases which 
 
 Since the package is minimal, you can directly use the provided `json_fixer.py` module in your project.
 
+### Clone the Repository
+
+```bash
+git clone https://github.com/m-ali-awan/gpt-json-sanitizer.git
+cd gpt-json-sanitizer
+
+```
+
 ## Usage
 
 ### Note
